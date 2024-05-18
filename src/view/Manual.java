@@ -58,7 +58,7 @@ public class Manual extends JFrame {
 	 */
 	public Manual() {
 		setTitle("Episode Counter 5.1");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Manual.class.getResource("/view/Logo Episode Counter 1x1.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Manual.class.getResource("/view/img/Logo Episode Counter 1x1.png")));
 		setResizable(false);
 		setType(Type.POPUP);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -80,7 +80,7 @@ public class Manual extends JFrame {
 			
 			}
 		});
-		btnNewButton_1.setIcon(new ImageIcon(Manual.class.getResource("/view/backlittle.png")));
+		btnNewButton_1.setIcon(new ImageIcon(Manual.class.getResource("/view/img/backlittle.png")));
 		btnNewButton_1.setToolTipText("Back");
 		btnNewButton_1.setBackground(Color.DARK_GRAY);
 		btnNewButton_1.setBounds(10, 11, 41, 40);
@@ -88,7 +88,7 @@ public class Manual extends JFrame {
 		
 		JLabel lblImg = new JLabel("");
 		lblImg.setHorizontalAlignment(SwingConstants.CENTER);
-		lblImg.setIcon(new ImageIcon(Manual.class.getResource("/view/po.png")));
+		lblImg.setIcon(new ImageIcon(Manual.class.getResource("/view/img/po.png")));
 		lblImg.setBounds(61, 11, 273, 40);
 		contentPane.add(lblImg);
 		
@@ -97,12 +97,12 @@ public class Manual extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 			
-				JOptionPane.showMessageDialog(null, "Para ser redirecionado à tela principal do programa \n você deve apertar em 'Avançar' no menu principal");
+				JOptionPane.showMessageDialog(null, "Para ser redirecionado ï¿½ tela principal do programa \n vocï¿½ deve apertar em 'Avanï¿½ar' no menu principal");
 			
 			}
 		});
 		btnNewButton.setBackground(Color.WHITE);
-		btnNewButton.setIcon(new ImageIcon(Manual.class.getResource("/view/btnAvancarM.png")));
+		btnNewButton.setIcon(new ImageIcon(Manual.class.getResource("/view/img/btnAvancarM.png")));
 		btnNewButton.setBounds(10, 87, 110, 49);
 		contentPane.add(btnNewButton);
 		
@@ -118,11 +118,11 @@ public class Manual extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 			
-				JOptionPane.showMessageDialog(null, "Para voltar à tela anterior você deve pressionar o botão 'Voltar'");
+				JOptionPane.showMessageDialog(null, "Para voltar ï¿½ tela anterior vocï¿½ deve pressionar o botï¿½o 'Voltar'");
 			
 			}
 		});
-		btnNewButton_2.setIcon(new ImageIcon(Manual.class.getResource("/view/backlittleM.png")));
+		btnNewButton_2.setIcon(new ImageIcon(Manual.class.getResource("/view/img/backlittleM.png")));
 		btnNewButton_2.setBackground(Color.WHITE);
 		btnNewButton_2.setBounds(224, 87, 110, 49);
 		contentPane.add(btnNewButton_2);
@@ -151,7 +151,7 @@ public class Manual extends JFrame {
 				
 			}
 		});
-		btnNewButton_3.setIcon(new ImageIcon(Manual.class.getResource("/view/btnManualPDF.png")));
+		btnNewButton_3.setIcon(new ImageIcon(Manual.class.getResource("/view/img/btnManualPDF.png")));
 		btnNewButton_3.setBackground(Color.DARK_GRAY);
 		btnNewButton_3.setForeground(Color.WHITE);
 		btnNewButton_3.setFont(new Font("MV Boli", Font.BOLD, 14));

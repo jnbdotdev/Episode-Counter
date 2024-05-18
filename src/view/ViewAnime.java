@@ -68,6 +68,7 @@ import javax.swing.JMenuBar;
 
 @SuppressWarnings({ "serial", "unused" })
 public class ViewAnime extends JFrame {
+
 	ConexaoBD conecta = new ConexaoBD();
 	
 	private JPanel contentPane;
@@ -237,7 +238,7 @@ public class ViewAnime extends JFrame {
 		
 		setBackground(Color.BLACK);
 		setTitle("Episode Counter 5.1");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(ViewAnime.class.getResource("/view/Logo Episode Counter 1x1.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(ViewAnime.class.getResource("/view/img/Logo Episode Counter 1x1.png")));
 		setResizable(false);
 		conecta.conexao();
 		
@@ -508,7 +509,7 @@ public class ViewAnime extends JFrame {
 			
 			}
 		});
-		btnNewButton.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/backlittle.png")));
+		btnNewButton.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/img/backlittle.png")));
 		btnNewButton.setToolTipText("Voltar");
 		btnNewButton.setBackground(Color.LIGHT_GRAY);
 		btnNewButton.setBounds(10, 76, 35, 28);
@@ -888,7 +889,7 @@ public class ViewAnime extends JFrame {
 		scrollPane.setViewportView(table);
 		
 		JButton btnAlterar = new JButton("");
-		btnAlterar.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/alteraricon.png")));
+		btnAlterar.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/img/alteraricon.png")));
 		btnAlterar.setToolTipText("Alterar");
 		btnAlterar.setBackground(Color.DARK_GRAY);
 		btnAlterar.addActionListener(new ActionListener() {
@@ -951,7 +952,7 @@ public class ViewAnime extends JFrame {
 		contentPane.add(btnAlterar);
 		
 		JButton btnExcluir = new JButton("");
-		btnExcluir.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/excluiricon2.png")));
+		btnExcluir.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/img/excluiricon2.png")));
 		btnExcluir.setBackground(Color.DARK_GRAY);
 		btnExcluir.setToolTipText("Excluir");
 		btnExcluir.addActionListener(new ActionListener() {
@@ -975,7 +976,7 @@ public class ViewAnime extends JFrame {
 		contentPane.add(btnExcluir);
 		
 		JButton btnSalvar = new JButton("");
-		btnSalvar.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/saveicon.png")));
+		btnSalvar.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/img/saveicon.png")));
 		btnSalvar.setToolTipText("Salvar");
 		btnSalvar.setBackground(Color.DARK_GRAY);
 		btnSalvar.addActionListener(new ActionListener() {
@@ -1053,7 +1054,7 @@ public class ViewAnime extends JFrame {
 			
 			}
 		});
-		btnAtualizar.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/atualizaricon.png")));
+		btnAtualizar.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/img/atualizaricon.png")));
 		btnAtualizar.setToolTipText("Atualizar Tabela");
 		btnAtualizar.setBackground(Color.DARK_GRAY);
 		btnAtualizar.setBounds(934, 548, 45, 45);
@@ -1146,7 +1147,7 @@ public class ViewAnime extends JFrame {
 		
 		
 		btnPesquisar.setBackground(Color.WHITE);
-		btnPesquisar.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/loupe.png")));
+		btnPesquisar.setIcon(new ImageIcon(ViewAnime.class.getResource("/view/img/loupe.png")));
 		btnPesquisar.setBounds(841, 557, 28, 28);
 		contentPane.add(btnPesquisar);
 		
@@ -1287,7 +1288,7 @@ public class ViewAnime extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 			
-				String[] jOptions = {"Mang�/Livro\n", "Anime/S�rie\n", "Filme\n","Remover Filtro"};
+				String[] jOptions = {"Mangá/Livro\n", "Anime/Série\n", "Filme\n","Remover Filtro"};
 				int z = JOptionPane.showOptionDialog(null,
 											"Selecione o Filtro:",
 											"Filtro", 
@@ -1465,7 +1466,7 @@ public class ViewAnime extends JFrame {
 	public void	preencherTabela2(String Sql){
 		@SuppressWarnings("rawtypes")
 		ArrayList dados = new ArrayList();
-		String[] colunas = new String[] {"Codigo", "Nome", "Temporada", "Capitulo", "Pr�ximo Cap.", "�ltimo Cap.", "Lan�amento", "St. Anime", "St. Pessoal", "Tipo"};
+		String[] colunas = new String[] {"Codigo", "Nome", "Temporada", "Capitulo", "Próximo Cap.", "Último Cap.", "Lançamento", "St. Anime", "St. Pessoal", "Tipo"};
 		
 		conecta.executaSQL(Sql);
 		try {

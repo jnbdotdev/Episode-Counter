@@ -53,7 +53,7 @@ public class MainMenu extends JFrame {
 	 * Create the frame.
 	 */
 	public MainMenu() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(MainMenu.class.getResource("/view/Logo Episode Counter 1x1.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(MainMenu.class.getResource("/view/img/Logo Episode Counter 1x1.png")));
 		setResizable(false);
 		setTitle("Episode Counter 5.1");
 		setAlwaysOnTop(true);
@@ -68,7 +68,7 @@ public class MainMenu extends JFrame {
 		
 		JButton btnAvancar = new JButton("");
 		btnAvancar.setBackground(Color.DARK_GRAY);
-		btnAvancar.setIcon(new ImageIcon(MainMenu.class.getResource("/view/btnAvancar.png")));
+		btnAvancar.setIcon(new ImageIcon(MainMenu.class.getResource("/view/img/btnAvancar.png")));
 		btnAvancar.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -78,7 +78,6 @@ public class MainMenu extends JFrame {
 					ViewAnime viewanime = new ViewAnime();
 					viewanime.setVisible(true);
 				} catch (IOException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			
@@ -89,7 +88,7 @@ public class MainMenu extends JFrame {
 		
 		JLabel lblLogo = new JLabel("");
 		lblLogo.setHorizontalAlignment(SwingConstants.CENTER);
-		lblLogo.setIcon(new ImageIcon(MainMenu.class.getResource("/view/Sem T\u00EDtulo-2.2.png")));
+		lblLogo.setIcon(new ImageIcon(MainMenu.class.getResource("/view/img/Sem T\u00EDtulo-2.2.png")));
 		lblLogo.setBounds(10, 0, 414, 156);
 		contentPane.add(lblLogo);
 		
@@ -104,7 +103,7 @@ public class MainMenu extends JFrame {
 			
 			}
 		});
-		btnManual.setIcon(new ImageIcon(MainMenu.class.getResource("/view/btnManual.png")));
+		btnManual.setIcon(new ImageIcon(MainMenu.class.getResource("/view/img/btnManual.png")));
 		btnManual.setBackground(Color.DARK_GRAY);
 		btnManual.setBounds(172, 211, 99, 33);
 		contentPane.add(btnManual);

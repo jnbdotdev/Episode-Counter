@@ -13,7 +13,7 @@ public class ConexaoBD {
 	public Statement stm;
 	public ResultSet rs;
 	private String driver = "com.mysql.jdbc.Driver";
-	private String caminho = "jdbc:mysql://localhost:3306/sanimesii?useSSL=false";
+	private String caminho = "jdbc:mysql://127.0.0.1:3306/sanimesii?useSSL=false";
 	private String usuario = "root";
 	private String senha = "root";
 	public Connection con;
